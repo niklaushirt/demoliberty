@@ -7,7 +7,7 @@ This project contains a simple servlet application.
 ```bash
 sudo apt-get remove git
 sudo apt-get install git
-git clone https://github.com/niklaushirt/libertydemo.git
+git clone https://github.com/niklaushirt/demoliberty.git
 cd libertysimple/
 mvn install
 sudo apt-get update
@@ -20,21 +20,21 @@ sudo apt-get install maven
 
 ```bash
 
-sudo rm -r libertydemo/
-git clone https://github.com/niklaushirt/libertydemo.git
-cd libertydemo/
-docker build -t libertydemo:1.0.0 docker_100
-docker build -t libertydemo:1.1.0 docker_110
-docker build -t libertydemo:1.2.0 docker_120
-docker build -t libertydemo:1.3.0 docker_130
+sudo rm -r demoliberty/
+git clone https://github.com/niklaushirt/demoliberty.git
+cd demoliberty/
+docker build -t demoliberty:1.0.0 docker_100
+docker build -t demoliberty:1.1.0 docker_110
+docker build -t demoliberty:1.2.0 docker_120
+docker build -t demoliberty:1.3.0 docker_130
 
-docker run --rm -p 9080:9080 libertydemo:1.3.0
+docker run --rm -p 9080:9080 demoliberty:1.3.0
 ```
 
 ## Add HELM repository
 
 ```
-https://raw.githubusercontent.com/niklaushirt/libertydemo/master/charts/stable/repo/stable/
+https://raw.githubusercontent.com/niklaushirt/demoliberty/master/charts/stable/repo/stable/
 ```
 
 ## Running the application using the command-line
