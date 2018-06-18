@@ -1,0 +1,14 @@
+********************************************************************************
+product = WebSphere Application Server 18.0.0.1 (wlp-1.0.20.cl180120180309-2209)
+wlp.install.dir = /Users/nhirt/Dropbox/PROJECTS/CLOUDPRIVATE/CHARTS/demoliberty/target/liberty/wlp/
+java.home = /Library/Java/JavaVirtualMachines/jdk1.8.0_151.jdk/Contents/Home/jre
+java.version = 1.8.0_151
+java.runtime = Java(TM) SE Runtime Environment (1.8.0_151-b12)
+os = Mac OS X (10.13.5; x86_64) (en_US)
+process = 31339@Niklauss-MBP.aircard
+********************************************************************************
+[6/18/18 7:10:31:219 CEST] 00000001 com.ibm.ws.kernel.launch.internal.FrameworkManager           A CWWKE0001I: The server defaultServer has been launched.
+[6/18/18 7:10:31:233 CEST] 00000001 com.ibm.ws.kernel.launch.internal.FrameworkManager           A CWWKE0100I: This product is licensed for development, and limited production use. The full license terms can be viewed here: https://public.dhe.ibm.com/ibmdl/export/pub/software/websphere/wasdev/license/base_ilan/ilan/18.0.0.1/lafiles/en.html
+[6/18/18 7:10:31:601 CEST] 0000000f com.ibm.ws.kernel.launch.internal.FrameworkManager           A CWWKE0085I: The server defaultServer is stopping because the JVM is exiting.
+[6/18/18 7:10:31:605 CEST] 00000001 com.ibm.ws.kernel.launch.internal.FrameworkManager           I CWWKE0002I: The kernel started after 0.673 seconds
+[6/18/18 7:10:32:400 CEST] 00000001 com.ibm.ws.kernel.launch.internal.FrameworkManager           A CWWKE0036I: The server defaultServer stopped after 1.471 seconds.
