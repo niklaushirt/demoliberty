@@ -23,7 +23,7 @@ spec:
         readinessProbe:
           httpGet: # make an HTTP request
             port: 9080 # port to use
-            path: /health # endpoint to hit
+            path: /demo/health # endpoint to hit
             scheme: HTTP # or HTTPS
           initialDelaySeconds: 90 # how long to wait before checking
           periodSeconds: 3 # how long to wait between checks
@@ -34,7 +34,7 @@ spec:
         livenessProbe:
           httpGet: # make an HTTP request
             port: 9080 # port to use
-            path: /health # endpoint to hit
+            path: /demo/health # endpoint to hit
             scheme: HTTP # or HTTPS
           initialDelaySeconds: 10 # how long to wait before checking
           periodSeconds: 3 # how long to wait between checks
