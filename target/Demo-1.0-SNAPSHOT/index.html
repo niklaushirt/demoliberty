@@ -118,11 +118,11 @@
                         <script>
                             var xmlhttp = new XMLHttpRequest();
                             var url_host=window.location.host;
-                            var url = "http://" + url_host + "/api";
+                            var url = "http://" + url_host + "/demo/api";
 
-                            document.getElementById("healthLink").href = "http://" + url_host + "/health";
+                            document.getElementById("healthLink").href = "http://" + url_host + "/demo/health";
 
-                            document.getElementById("apiLink").href = "http://" + url_host + "/api";
+                            document.getElementById("apiLink").href = "http://" + url_host + "/demo/api";
 
                             xmlhttp.onreadystatechange = function () {
                                 if (xmlhttp.readyState == 4 && xmlhttp.status == 200) {

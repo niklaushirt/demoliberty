@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><!--HTTP server plugin config file for defaultServer generated on 2018.06.18 at 07:15:37 CEST-->
+<?xml version="1.0" encoding="UTF-8"?><!--HTTP server plugin config file for defaultServer generated on 2018.06.18 at 07:53:47 CEST-->
 <Config ASDisableNagle="false" AcceptAllContent="false" AppServerPortPreference="HostHeader" ChunkedResponse="false" FIPSEnable="false" IISDisableNagle="false" IISPluginPriority="High" IgnoreDNSFailures="false" RefreshInterval="60" ResponseChunkSize="64" SSLConsolidate="false" TrustedProxyEnable="false" VHostMatchingCompat="false">
    <Log LogLevel="Error" Name="/opt/IBM/WebSphere/Plugins/logs/webserver1/http_plugin.log"/>
    <Property Name="ESIEnable" Value="true"/>
@@ -17,8 +17,8 @@
    </VirtualHostGroup>
    <ServerCluster CloneSeparatorChange="false" GetDWLMTable="false" IgnoreAffinityRequests="true" LoadBalance="Round Robin" Name="defaultServer_default_node_Cluster" PostBufferSize="0" PostSizeLimit="-1" RemoveSpecialHeaders="true" RetryInterval="60" ServerIOTimeoutRetry="-1">
       <Server CloneID="b25d081a-0da2-4f6e-b59d-fb2a54ed7881" ConnectTimeout="5" ExtendedHandshake="false" LoadBalanceWeight="20" MaxConnections="-1" Name="default_node_defaultServer" ServerIOTimeout="900" WaitForContinue="false">
-         <Transport Hostname="niklauss-mbp.aircard" Port="9080" Protocol="http"/>
-         <Transport Hostname="niklauss-mbp.aircard" Port="9443" Protocol="https">
+         <Transport Hostname="172.20.10.9" Port="9080" Protocol="http"/>
+         <Transport Hostname="172.20.10.9" Port="9443" Protocol="https">
             <Property Name="keyring" Value="/opt/IBM/WebSphere/Plugins/config/webserver1/plugin-key.kdb"/>
             <Property Name="stashfile" Value="/opt/IBM/WebSphere/Plugins/config/webserver1/plugin-key.sth"/>
          </Transport>
@@ -28,7 +28,7 @@
       </PrimaryServers>
    </ServerCluster>
    <UriGroup Name="default_host_defaultServer_default_node_Cluster_URIs">
-      <Uri AffinityCookie="JSESSIONID" AffinityURLIdentifier="jsessionid" Name="/*"/>
+      <Uri AffinityCookie="JSESSIONID" AffinityURLIdentifier="jsessionid" Name="/demo/*"/>
    </UriGroup>
    <Route ServerCluster="defaultServer_default_node_Cluster" UriGroup="default_host_defaultServer_default_node_Cluster_URIs" VirtualHostGroup="default_host"/>
 </Config>
